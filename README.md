@@ -14,12 +14,14 @@ MusicFinder is a command-line tool that detects which audio samples from a folde
 - .NET Framework 4.7.2
 - All audio files must be in `.wav` format.
 - The [SoundFingerprinting](https://www.nuget.org/packages/SoundFingerprinting/) NuGet package.
+- **Supported sample rates:** SoundFingerprinting works best with audio files sampled at **44.1 kHz (44100 Hz)**, **16 kHz (16000 Hz)**, or **8 kHz (8000 Hz)**. Other sample rates may require resampling for optimal results.
 
 ## Usage
 
 ### Command Line
 
 You can run the program with arguments:
+
 
 ```bash
 MusicFinder.exe "path\to\main.wav" "path\to\samples_folder"
